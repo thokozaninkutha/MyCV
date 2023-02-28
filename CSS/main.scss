@@ -1,0 +1,1353 @@
+// in this sheet we'll be styling the whole website
+// we'll start with the iPhone 13 screen then use media queries for bigger screens
+
+
+// setting the background color with a gradient animation
+body {
+	background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+}
+
+// 					# FIRST SECTION [HOME SECTION] #
+
+// my logo positioned in the middle of the screen with a white round border
+#logo{
+	position: absolute;
+	left: 8rem;
+	top: 8rem;
+	border: 5px solid rgb(255, 255, 255);
+	border-radius: 100px;
+	width: 120px;
+	height: 120px;
+	background-color: transparent;
+}
+  
+
+// "hello world" in different languages positioned in the middle of the screen, under the logo
+#slideshow{
+	width: 300px;
+	position: absolute;
+	top: 22em;
+	right: 3.5em;
+	color: rgb(255, 255, 255);
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bolder;
+	font-size: 1em;
+	letter-spacing: 2px;
+	word-wrap: break-word;
+	margin: 50px 0;
+}#slideshow:hover{
+	color: rgb(171, 187, 194);
+}
+
+a {
+text-decoration: none;
+}
+
+// line [52-100] is from: https://codepen.io/ettrics/pen/WRbGRN
+.et-hero-tabs,
+.et-slide {	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: relative;
+    text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.et-hero-tabs-container {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	z-index: 10;
+	&--top {
+	position: fixed;
+	top: 0;
+	}
+}
+
+.et-hero-tab {
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 1;
+color: #ffffff;
+letter-spacing: 0rem;
+	transition: all 0.5s ease;
+	font-size: 0.8rem;
+  &:hover {
+		color:rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.8);
+		transition: all 0.5s ease;
+}
+}
+
+.et-hero-tab-slider {
+position: absolute;
+bottom: 0;
+width: 0;
+height: 5px;
+background-color: rgba(255, 255, 255, 0.8);
+transition: left 0.3s ease;
+}
+
+
+// 											##	BIO #
+
+// bio paragraph colored white and positioned in the middle of the screen
+#bio_paragraph{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+// 											# SKILLS & EDUCATION #
+
+// heading colored white and positioned in the middle of the screen
+#skills_heading{
+	color: white;
+}
+
+// skills list positioned in the middle of the screen and colored white
+#skills_list{
+	position: relative;
+	top: 1em;
+	font-weight: bold;
+	color: white;
+	right: 2em;
+	text-align: start;
+}
+
+// second heading colored white and positioned in the middle of the screen
+#education_heading{
+	position: relative;
+	top: 1em;
+	color: white;
+}
+
+// education paragraph colored white and positioned in the middle of the screen
+#education_paragraph{
+	position: relative;
+	top: 3em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+// 											# EXPERIENCE #
+
+// heading colored white and positioned in the middle of the screen
+#experience_heading{
+	position: relative;
+	top: 5em;
+	font-weight: bold;
+	color: white;
+}
+
+#experience_paragraph{
+	position: relative;
+	top: 10em;
+	color: white;
+	font-weight: bold;
+}
+
+//											# PROJECTS #
+
+// project name colored white and positioned in the middle of the screen
+#project_Nadra{
+	position: relative;
+	color: white;
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+// iframe of the project, other styles applied in html
+#nadra_iframe{
+	position: relative;
+	top: 3rem;
+}
+
+// colored white and positioned in the middle of the screen
+#projects_notice{
+	position: relative;
+	top: 7em;
+	color: white;
+}
+
+
+//											# CONTACT ME #
+
+
+// SOCIAL MEDIA ICONS
+// positioned to line up in the middle of the screen
+// the email and location icons are positioned on the left of their information
+
+
+#linkedin{
+	position: absolute;
+	left: 3rem;
+	right: 0;
+	top: 17rem;
+	width: 40px;
+	height: 40px;
+}
+
+#twitter{
+	position: absolute;
+	left: 7.8rem;
+	top: 17rem;
+	width: 50px;
+	height: 50px;
+}
+
+#instagram{
+	position: absolute;
+	top: 17rem;
+	left: 13rem;
+	width: 40px;
+	height: 40px;
+}
+
+#github{
+	position: absolute;
+	top: 17rem;
+	left: 18rem;
+	width: 40px;
+	height: 40px;
+}
+
+#email_icon{
+	position: absolute;
+	left: 5rem;
+	top: 25rem;
+	width: 40px;
+	height: 40px;
+}
+
+// email address in text form colored white
+#email{
+	position: absolute;
+	top: 25.4em;
+	left: 9em;
+	color: white;
+}
+
+
+#location_pin{
+	position: absolute;
+	top: 29.4em;
+	left: 4.5rem;
+	bottom: 5.5rem;
+	width: 50px;
+	height: 50px;
+}
+
+// residential address in text form colored white
+#address{
+	position: absolute;
+	top: 30em;
+	left: 9em;
+	color: white;
+}
+
+//hiding the scroll bar
+::-webkit-scrollbar {
+    display: none;
+}
+
+#underscores{
+	display: none;
+}
+
+
+
+// 											# MEDIA QUERIES #
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+// setting the background color with a gradient animation
+body {
+	background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+}
+
+// 					# FIRST SECTION [HOME SECTION] #
+
+// my logo positioned in the middle of the screen with a white round border
+#logo{
+	position: absolute;
+	left: 14rem;
+	top: 8rem;
+	border: 5px solid rgb(255, 255, 255);
+	border-radius: 100px;
+	width: 120px;
+	height: 120px;
+	background-color: transparent;
+}
+  
+// "hello world" in different languages positioned in the middle of the screen, under the logo
+#slideshow{
+	width: 300px;
+	position: absolute;
+	top: 22em;
+	right: 8.8em;
+	color: rgb(255, 255, 255);
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bolder;
+	font-size: 1em;
+	letter-spacing: 2px;
+	word-wrap: break-word;
+	margin: 50px 0;
+}#slideshow:hover{
+	color: rgb(171, 187, 194);
+}
+
+a {
+text-decoration: none;
+}
+
+// line [52-100] is from: https://codepen.io/ettrics/pen/WRbGRN
+.et-hero-tabs,
+.et-slide {	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: relative;
+    text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.et-hero-tabs-container {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	z-index: 10;
+	&--top {
+	position: fixed;
+	top: 0;
+	}
+}
+
+.et-hero-tab {
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 1;
+color: #ffffff;
+letter-spacing: 0rem;
+	transition: all 0.5s ease;
+	font-size: 0.8rem;
+  &:hover {
+		color:rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.8);
+		transition: all 0.5s ease;
+}
+}
+
+.et-hero-tab-slider {
+position: absolute;
+bottom: 0;
+width: 0;
+height: 5px;
+background-color: rgba(255, 255, 255, 0.8);
+transition: left 0.3s ease;
+}
+
+
+// 											##	BIO #
+
+// bio paragraph colored white and positioned in the middle of the screen
+#bio_paragraph{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+// 											# SKILLS & EDUCATION #
+
+// heading colored white and positioned in the middle of the screen
+#skills_heading{
+	color: white;
+}
+
+// skills list positioned in the middle of the screen and colored white
+#skills_list{
+	position: relative;
+	top: 1em;
+	font-weight: bold;
+	color: white;
+	right: 2em;
+	text-align: start;
+}
+
+// second heading colored white and positioned in the middle of the screen
+#education_heading{
+	position: relative;
+	top: 1em;
+	color: white;
+}
+
+// education paragraph colored white and positioned in the middle of the screen
+#education_paragraph{
+	position: relative;
+	top: 3em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+// 											# EXPERIENCE #
+
+// heading colored white and positioned in the middle of the screen
+#experience_heading{
+	position: absolute;
+	font-weight: bold;
+	color: white;
+}
+
+#experience_paragraph{
+	position: absolute;
+	top: 17em;
+	color: white;
+	font-weight: bold;
+}
+
+//											# PROJECTS #
+
+// project name colored white and positioned in the middle of the screen
+#project_Nadra{
+	position: absolute;
+	bottom: 20em;
+	color: white;
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+// iframe of the project, other styles applied in html
+#nadra_iframe{
+	position: absolute;
+	top: 1rem;
+	height: 200px;
+	width: 450px;
+}
+
+// colored white and positioned in the middle of the screen
+#projects_notice{
+	position: absolute;
+	top: 18em;
+	color: white;
+}
+
+
+//											# CONTACT ME #
+
+
+// SOCIAL MEDIA ICONS
+// positioned to line up in the middle of the screen
+// the email and location icons are positioned on the left of their information
+
+
+#linkedin{
+	position: absolute;
+	left: 7rem;
+	right: 0;
+	top: 17rem;
+	width: 40px;
+	height: 40px;
+}
+
+#twitter{
+	position: absolute;
+	left: 13rem;
+	top: 17rem;
+	width: 50px;
+	height: 50px;
+}
+
+#instagram{
+	position: absolute;
+	top: 17rem;
+	left: 19rem;
+	width: 40px;
+	height: 40px;
+}
+
+#github{
+	position: absolute;
+	top: 17rem;
+	left: 26rem;
+	width: 40px;
+	height: 40px;
+}
+
+#email_icon{
+	position: absolute;
+	left: 5rem;
+	top: 25rem;
+	width: 40px;
+	height: 40px;
+}
+
+// email address in text form colored white
+#email{
+	position: absolute;
+	top: 25.4em;
+	left: 9em;
+	color: white;
+}
+
+
+#location_pin{
+	position: absolute;
+	top: 29.4em;
+	left: 4.5rem;
+	bottom: 5.5rem;
+	width: 50px;
+	height: 50px;
+}
+
+// residential address in text form colored white
+#address{
+	position: absolute;
+	top: 30em;
+	left: 9em;
+	color: white;
+}
+
+//hiding the scroll bar
+::-webkit-scrollbar {
+    display: none;
+}
+
+#underscores{
+	display: none;
+}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+// setting the background color with a gradient animation
+body {
+	background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+}
+
+// 					# FIRST SECTION [HOME SECTION] #
+
+// my logo positioned in the middle of the screen with a white round border
+#logo{
+	position: absolute;
+	left: 11rem;
+	top: 12rem;
+	border: 5px solid rgb(255, 255, 255);
+	border-radius: 100px;
+	width: 120px;
+	height: 120px;
+	background-color: transparent;
+}
+  
+// "hello world" in different languages positioned in the middle of the screen, under the logo
+#slideshow{
+	width: 300px;
+	position: absolute;
+	top: 12em;
+	right: 8em;
+	color: rgb(255, 255, 255);
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bolder;
+	font-size: 1em;
+	letter-spacing: 2px;
+	word-wrap: break-word;
+	margin: 50px 0;
+}#slideshow:hover{
+	color: rgb(171, 187, 194);
+}
+
+a {
+text-decoration: none;
+}
+
+// line [52-100] is from: https://codepen.io/ettrics/pen/WRbGRN
+.et-hero-tabs,
+.et-slide {	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: relative;
+    text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.et-hero-tabs-container {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	z-index: 10;
+	&--top {
+	position: fixed;
+	top: 0;
+	}
+}
+
+.et-hero-tab {
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 1;
+color: #ffffff;
+letter-spacing: 0rem;
+	transition: all 0.5s ease;
+	font-size: 0.8rem;
+  &:hover {
+		color:rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.8);
+		transition: all 0.5s ease;
+}
+}
+
+.et-hero-tab-slider {
+position: absolute;
+bottom: 0;
+width: 0;
+height: 5px;
+background-color: rgba(255, 255, 255, 0.8);
+transition: left 0.3s ease;
+}
+
+
+// 											##	BIO #
+
+// bio paragraph colored white and positioned in the middle of the screen
+#bio_paragraph{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	width: 400px;
+}
+
+// 											# SKILLS & EDUCATION #
+
+// heading colored white and positioned in the middle of the screen
+#skills_heading{
+	color: white;
+}
+
+// skills list positioned in the middle of the screen and colored white
+#skills_list{
+	position: relative;
+	top: 1em;
+	font-weight: bold;
+	color: white;
+	right: 2em;
+	text-align: start;
+}
+
+// second heading colored white and positioned in the middle of the screen
+#education_heading{
+	position: relative;
+	top: 1em;
+	color: white;
+}
+
+// education paragraph colored white and positioned in the middle of the screen
+#education_paragraph{
+	position: relative;
+	top: 3em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+// 											# EXPERIENCE #
+
+// heading colored white and positioned in the middle of the screen
+#experience_heading{
+	position: absolute;
+	//top: 5em;
+	font-weight: bold;
+	color: white;
+}
+
+#experience_paragraph{
+	position: absolute;
+	top: 17em;
+	width: 390px;
+	color: white;
+	font-weight: bold;
+}
+
+//											# PROJECTS #
+
+// project name colored white and positioned in the middle of the screen
+#project_Nadra{
+	position: absolute;
+	top: 3em;
+	color: white;
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+// iframe of the project, other styles applied in html
+#nadra_iframe{
+	position: absolute;
+	top: 12rem;
+}
+
+// colored white and positioned in the middle of the screen
+#projects_notice{
+	position: absolute;
+	top: 29em;
+	color: white;
+}
+
+
+//											# CONTACT ME #
+
+
+// SOCIAL MEDIA ICONS
+// positioned to line up in the middle of the screen
+// the email and location icons are positioned on the left of their information
+
+
+#linkedin{
+	position: absolute;
+	left: 10rem;
+	right: 0;
+	top: 17rem;
+	width: 50px;
+	height: 50px;
+}
+
+#twitter{
+	position: absolute;
+	left: 18rem;
+	top: 17rem;
+	width: 60px;
+	height: 60px;
+}
+
+#instagram{
+	position: absolute;
+	top: 17rem;
+	left: 27rem;
+	width: 50px;
+	height: 50px;
+}
+
+#github{
+	position: absolute;
+	top: 17rem;
+	left: 35.5rem;
+	width: 50px;
+	height: 50px;
+}
+
+#email_icon{
+	position: absolute;
+	left: 10rem;
+	top: 25rem;
+	width: 50px;
+	height: 50px;
+}
+
+// email address in text form colored white
+#email{
+	position: absolute;
+	top: 25.7em;
+	left: 15em;
+	color: white;
+}
+
+
+#location_pin{
+	position: absolute;
+	top: 32em;
+	left: 10rem;
+	bottom: 5.5rem;
+	width: 50px;
+	height: 50px;
+}
+
+// residential address in text form colored white
+#address{
+	position: absolute;
+	top: 32.5em;
+	left: 15em;
+	color: white;
+}
+
+//hiding the scroll bar
+::-webkit-scrollbar {
+    display: none;
+}
+
+#underscores{
+	display: none;
+}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+// setting the background color with a gradient animation
+body {
+	background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+}
+
+// 					# FIRST SECTION [HOME SECTION] #
+
+// my logo positioned in the middle of the screen with a white round border
+#logo{
+	position: absolute;
+	left: 14rem;
+	top: 18rem;
+	border: 5px solid rgb(255, 255, 255);
+	border-radius: 100px;
+	width: 180px;
+	height: 180px;
+	background-color: transparent;
+}
+  
+// "hello world" in different languages positioned in the middle of the screen, under the logo
+#slideshow{
+	width: 390px;
+	position: absolute;
+	top: 13em;
+	right: 5.8em;
+	color: rgb(255, 255, 255);
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bolder;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	word-wrap: break-word;
+	margin: 50px 0;
+}#slideshow:hover{
+	color: rgb(171, 187, 194);
+}
+
+a {
+text-decoration: none;
+}
+
+// line [52-100] is from: https://codepen.io/ettrics/pen/WRbGRN
+.et-hero-tabs,
+.et-slide {	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: relative;
+    text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.et-hero-tabs-container {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	z-index: 10;
+	&--top {
+	position: fixed;
+	top: 0;
+	}
+}
+
+.et-hero-tab {
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	color: #ffffff;
+	letter-spacing: 0rem;
+	transition: all 0.5s ease;
+	font-size: 1.2rem;
+  &:hover {
+	color:rgb(0, 0, 0);
+  	background: rgba(255, 255, 255, 0.8);
+	transition: all 0.5s ease;
+}
+}
+
+.et-hero-tab-slider {
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	height: 5px;
+	background-color: rgba(255, 255, 255, 0.8);
+	transition: left 0.3s ease;
+}
+
+
+// 											##	BIO #
+
+// bio paragraph colored white and positioned in the middle of the screen
+#bio_paragraph{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.4em;
+	width: 700px;
+}
+
+// 											# SKILLS & EDUCATION #
+
+// heading colored white and positioned in the middle of the screen
+#skills_heading{
+	color: white;
+}
+
+// skills list positioned in the middle of the screen and colored white
+#skills_list{
+	position: relative;
+	top: 1em;
+	font-weight: bold;
+	font-size: 1.4em;
+	color: white;
+	right: 2em;
+	text-align: start;
+}
+
+// second heading colored white and positioned in the middle of the screen
+#education_heading{
+	position: relative;
+	top: 1em;
+	color: white;
+}
+
+// education paragraph colored white and positioned in the middle of the screen
+#education_paragraph{
+	position: relative;
+	top: 3em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.4em;
+	color: white;
+}
+
+// 											# EXPERIENCE #
+
+// heading colored white and positioned in the middle of the screen
+#experience_heading{
+	position: absolute;
+	top: 5em;
+	font-weight: bold;
+	color: white;
+}
+
+#experience_paragraph{
+	position: absolute;
+	top: 15em;
+	width: 700px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+//											# PROJECTS #
+
+// project name colored white and positioned in the middle of the screen
+#project_Nadra{
+	position: absolute;
+	color: white;
+	font-weight: bolder;
+	font-size: 2em;
+}#project_Nadra:hover{
+	color: rgb(43, 19, 44);
+}
+
+// iframe of the project, other styles applied in html
+#nadra_iframe{
+	position: absolute;
+	top: 14rem;
+	width: 700px;
+	height: 300px;
+}
+
+// colored white and positioned in the middle of the screen
+#projects_notice{
+	position: relative;
+	top: 11.2em;
+	color: white;
+	font-size: 1.4em;
+}
+
+
+//											# CONTACT ME #
+
+
+// SOCIAL MEDIA ICONS
+// positioned to line up in the middle of the screen
+// the email and location icons are positioned on the left of their information
+
+
+#linkedin{
+	position: absolute;
+	left: 10rem;
+	right: 0;
+	top: 17rem;
+	width: 70px;
+	height: 70px;
+}
+
+#twitter{
+	position: absolute;
+	left: 22rem;
+	top: 17rem;
+	width: 70px;
+	height: 70px;
+}
+
+#instagram{
+	position: absolute;
+	top: 17rem;
+	left: 35rem;
+	width: 70px;
+	height: 70px;
+}
+
+#github{
+	position: absolute;
+	top: 17rem;
+	left: 47rem;
+	width: 70px;
+	height: 70px;
+}
+
+#email_icon{
+	position: absolute;
+	left: 10rem;
+	top: 30rem;
+	width: 70px;
+	height:70px;
+}
+
+// email address in text form colored white
+#email{
+	position: absolute;
+	top: 22em;
+	left: 12em;
+	color: white;
+	font-size: 1.4em;
+}
+
+
+#location_pin{
+	position: absolute;
+	top: 40em;
+	left: 9.5rem;
+	bottom: 5.5rem;
+	width: 70px;
+	height: 70px;
+}
+
+// residential address in text form colored white
+#address{
+	position: absolute;
+	top: 30em;
+	left: 11.7em;
+	color: white;
+	font-size: 1.4em;
+}
+
+//hiding the scroll bar
+::-webkit-scrollbar {
+    display: none;
+}
+
+#underscores{
+	position: relative;
+	color: white;
+	top: 50em;
+}
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+// setting the background color with a gradient animation
+body {
+	background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+}
+
+// 					# FIRST SECTION [HOME SECTION] #
+
+// my logo positioned in the middle of the screen with a white round border
+#logo{
+	position: absolute;
+	left: 14rem;
+	top: 13rem;
+	border: 5px solid rgb(255, 255, 255);
+	border-radius: 100px;
+	width: 180px;
+	height: 180px;
+	background-color: transparent;
+}
+  
+// "hello world" in different languages positioned in the middle of the screen, under the logo
+#slideshow{
+	width: 390px;
+	position: absolute;
+	top: 10em;
+	right: 12em;
+	color: rgb(255, 255, 255);
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bolder;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	word-wrap: break-word;
+	margin: 50px 0;
+}#slideshow:hover{
+	color: rgb(171, 187, 194);
+}
+
+a {
+text-decoration: none;
+}
+
+// line [52-100] is from: https://codepen.io/ettrics/pen/WRbGRN
+.et-hero-tabs,
+.et-slide {	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: relative;
+    text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.et-hero-tabs-container {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	z-index: 10;
+	&--top {
+	position: fixed;
+	top: 0;
+	}
+}
+
+.et-hero-tab {
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	color: #ffffff;
+	letter-spacing: 0rem;
+	transition: all 0.5s ease;
+	font-size: 1.2rem;
+  &:hover {
+	color:rgb(0, 0, 0);
+  	background: rgba(255, 255, 255, 0.8);
+	transition: all 0.5s ease;
+}
+}
+
+.et-hero-tab-slider {
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	height: 5px;
+	background-color: rgba(255, 255, 255, 0.8);
+	transition: left 0.3s ease;
+}
+
+
+// 											##	BIO #
+
+// bio paragraph colored white and positioned in the middle of the screen
+#bio_paragraph{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.4em;
+	width: 700px;
+}
+
+// 											# SKILLS & EDUCATION #
+
+// heading colored white and positioned in the middle of the screen
+#skills_heading{
+	color: white;
+}
+
+// skills list positioned in the middle of the screen and colored white
+#skills_list{
+	position: relative;
+	top: 1em;
+	font-weight: bold;
+	font-size: 1.4em;
+	color: white;
+	right: 2em;
+	text-align: start;
+}
+
+// second heading colored white and positioned in the middle of the screen
+#education_heading{
+	position: relative;
+	top: 1em;
+	color: white;
+}
+
+// education paragraph colored white and positioned in the middle of the screen
+#education_paragraph{
+	position: relative;
+	top: 3em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.4em;
+	color: white;
+}
+
+// 											# EXPERIENCE #
+
+// heading colored white and positioned in the middle of the screen
+#experience_heading{
+	position: absolute;
+	top: 5em;
+	font-weight: bold;
+	color: white;
+}
+
+#experience_paragraph{
+	position: absolute;
+	top: 14em;
+	color: white;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+//											# PROJECTS #
+
+// project name colored white and positioned in the middle of the screen
+#project_Nadra{
+	position: absolute;
+	color: white;
+	font-weight: bolder;
+	font-size: 2em;
+}#project_Nadra:hover{
+	color: rgb(43, 19, 44);
+}
+
+// iframe of the project, other styles applied in html
+#nadra_iframe{
+	position: relative;
+	top: 2rem;
+}
+
+// colored white and positioned in the middle of the screen
+#projects_notice{
+	position: relative;
+	top: 3em;
+	color: white;
+	font-size: 1.4em;
+}
+
+
+//											# CONTACT ME #
+
+
+// SOCIAL MEDIA ICONS
+// positioned to line up in the middle of the screen
+// the email and location icons are positioned on the left of their information
+
+
+#linkedin{
+	position: absolute;
+	left: 13rem;
+	right: 0;
+	top: 10rem;
+	width: 70px;
+	height: 70px;
+}
+
+#twitter{
+	position: absolute;
+	left: 28.5rem;
+	top: 10rem;
+	width: 90px;
+	height: 90px;
+}
+
+#instagram{
+	position: absolute;
+	top: 10rem;
+	left: 45rem;
+	width: 70px;
+	height: 70px;
+}
+
+#github{
+	position: absolute;
+	top: 10rem;
+	left: 62rem;
+	width: 70px;
+	height: 70px;
+}
+
+#email_icon{
+	position: absolute;
+	left: 13rem;
+	top: 22rem;
+	width: 70px;
+	height:70px;
+}
+
+// email address in text form colored white
+#email{
+	position: absolute;
+	top: 16.5em;
+	left: 15.5em;
+	color: white;
+	font-size: 1.4em;
+}
+
+
+#location_pin{
+	position: absolute;
+	top: 30em;
+	left: 13rem;
+	bottom: 5.5rem;
+	width: 70px;
+	height: 70px;
+}
+
+// residential address in text form colored white
+#address{
+	position: absolute;
+	top: 22.5em;
+	left: 15.5em;
+	color: white;
+	font-size: 1.4em;
+}
+
+//hiding the scroll bar
+::-webkit-scrollbar {
+    display: none;
+}
+}
