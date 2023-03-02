@@ -24,10 +24,6 @@ This CV gives details about:
 
 ## Usage
 
-How you can enjoy the site:
-
-Treat it like a museum of some sort .. take a look at the art. And if you would like to see more from the artists or models, you can click on their names on the website and you'll be redirected to their instagram profiles.
-
 What you can do:
 
 * Read important information about me.
