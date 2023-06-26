@@ -1,6 +1,5 @@
 body {
-  background: -webkit-gradient(linear, right top, left top, from(#2C5364), color-stop(#203A43), to(#0F2027));
-  background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+  background-color: #000000;
 }
 
 #logo {
@@ -254,8 +253,7 @@ a {
 
 @media (min-width: 576px) {
   body {
-    background: -webkit-gradient(linear, right top, left top, from(#2C5364), color-stop(#203A43), to(#0F2027));
-    background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+   background-color: #000000;
   }
   #logo {
     position: absolute;
@@ -482,8 +480,7 @@ a {
 
 @media (min-width: 768px) {
   body {
-    background: -webkit-gradient(linear, right top, left top, from(#2C5364), color-stop(#203A43), to(#0F2027));
-    background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+   background-color: #000000;
   }
   #logo {
     position: absolute;
@@ -710,8 +707,7 @@ a {
 
 @media (min-width: 992px) {
   body {
-    background: -webkit-gradient(linear, right top, left top, from(#2C5364), color-stop(#203A43), to(#0F2027));
-    background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+    background-color: #000000;
   }
   #logo {
     position: absolute;
@@ -953,8 +949,7 @@ a {
 
 @media (min-width: 1200px) {
   body {
-    background: -webkit-gradient(linear, right top, left top, from(#2C5364), color-stop(#203A43), to(#0F2027));
-    background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+    background-color: #000000;
   }
   #logo {
     position: absolute;
